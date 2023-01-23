@@ -52,6 +52,7 @@ print([x, y for x in range(-1, 2) for y in range(-1, 2) if x != 0 or y != 0])
 # STDOUT:
 # [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 0), (0, 1), (1, -1), (1, 0), (1, 1)]
 
+
 #################
 # seq operations
 #################
@@ -65,6 +66,7 @@ print(10 not in xs) # -> True
 
 # `in` also works for substrings
 print('$' in '$100') # -> True
+
 
 ##########
 # slicing
@@ -83,6 +85,7 @@ print('$' in '$100') # -> True
 print(xs[5:]) # -> [5, 6, 7, 8, 9]
 print(xs[::-1]) # -> [9, 8, 7, 6, 5, 4, 3, 2, 1]
 print(xs[1::2]) # -> [1, 3, 5, 7, 9]
+
 
 ################
 # seq unpacking
@@ -104,6 +107,7 @@ zs = map(max, *ys)
 print(*[1, 2, 3])
 # STDOUT:
 # 1 2 3
+
 
 #####################
 # variadic functions
@@ -127,3 +131,61 @@ def apply(f, *args, **kwargs):
     # *args will expand into any number of positional arguments into f, and
     # **kwargs will expand and match up to the keyword arguments of f
     return f(*args, **kwargs)
+
+
+#######################################
+# looping constructs: do's and don't's:
+#######################################
+
+# `for x in xs` is the general looping idiom, where `xs` is an iterable
+# and `x` is a desired name to bind the values from `xs` to
+for x in [1, 2, 3]:
+    print(x, end=' ')
+
+# STDOUT:
+# 1 2 3
+
+# generally, the `for x in range(len(xs))` idiom is unnecessary
+# just don't do it
+# if you absolutely need that index value, you can use
+for i, x in enumerate([1, 2, 3]):
+    print(i, x, sep=', ', end='; ' if i < len(xs) - 1 else '\n')
+
+# STDOUT:
+# 0, 1; 1, 2; 2, 3
+
+# I have not used a while loop in a long time
+# let that tell you how useful they are
+
+
+###########
+# mutations
+###########
+
+xs = list(range(10))
+ys = list(range(10))
+
+# `xs.append(x)` is specifically defined to have the same effect as `xs[len(xs):] = [x]`  
+xs.append(10)
+ys[len(ys):] = [10]
+print(xs == ys)
+
+# STDOUT:
+# True
+
+# Therefore, it only takes ONE parameter
+
+# if you want to have more than one element added to the end of a list, use `extend`
+# `xs.extend(ys)` is also specifically defined to have the same effect as `xs[len(xs):] = ys`
+xs.extend(range(10, 21))
+ys[len(ys):] = range(10, 21)
+print(xs == ys)
+
+# STDOUT:
+# True
+
+# all of the list functions are intended to be used for their SIDE EFFECTS only
+# they are all specifically defined to return `None`
+# if you want to chain multiple list operations together or pass a new list into a function
+# (something that requires returning a list out of a concatenation), you need to use
+# the `+` operator
