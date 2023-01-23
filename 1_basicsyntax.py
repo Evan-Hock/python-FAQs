@@ -59,7 +59,7 @@ raw strings begin with r or R followed immediately by a normal string. normal py
     \t (horizontal tab), \r (carriage return), \x17 (end of transmission block), \u03c0 (π)
     in raw strings, these escape sequences will be interpreted literally. notably, however, raw strings cannot end with a backslash,
     because the way raw strings are interpreted Python will think that the closing quote on the string is part of the raw string
-    the difference between raw strings and normal strings:
+    to illustrate the difference between raw strings and normal strings:
     print('\u03c0') -> π
     print(r'\u03c0') -> \u03c0
     
