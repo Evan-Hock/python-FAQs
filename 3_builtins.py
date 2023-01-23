@@ -6,12 +6,11 @@
 
 # they dont have to go at the beginning of the file (but it is convention)
 import functools as ft # the functools namespace is now renamed to 'ft' for this file, so functools exports can be called with 'ft', i.e. 'ft.partial'
-import itertools as it
-import operator as op
-import time # 'as' is not mandatory
-from typing import TypeVar
-# using a from ... import statement puts the export (in this case TypeVar) into the 'global' namespace,
-# so it can be called just TypeVar instead of typing.TypeVar
+# the 'as' clause is not mandatory
+# using a 'from ... import' statement allows you to import some number of exports from a particular module, e.g.
+# from functools import reduce
+# all names imported this way are put into the 'global namespace'
+# the above import would import the reduce function from the functools module, and it would be usable as 'reduce' instead of 'functools.reduce'
 
 
 ##############
