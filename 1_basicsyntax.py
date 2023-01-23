@@ -50,6 +50,21 @@ tuple syntax: 1, 2, 3
 list syntax: [1, 2, 3]
 set syntax: {1, 2, 3}
 dict syntax: {'a': 1, 'b': 2, 'c': 3}
+
+strings:
+normal strings can use either single or double quotes (there is no difference as long as the quotes match)
+format strings begin with f or F followed immediately by a normal string. they can contain expressions within curly brackets {} that will be
+    evaluated at runtime and inserted into the string, e.g. print(f'1 + 1 = {1 + 1}') -> 1 + 1 = 2
+raw strings begin with r or R followed immediately by a normal string. normal python strings can contain escape sequences, i.e. \n (newline),
+    \t (horizontal tab), \r (carriage return), \x17 (end of transmission block), \u03c0 (π)
+    in raw strings, these escape sequences will be interpreted literally. notably, however, raw strings cannot end with a backslash,
+    because the way raw strings are interpreted Python will think that the closing quote on the string is part of the raw string
+    the difference between raw strings and normal strings:
+    print('\u03c0') -> π
+    print(r'\u03c0') -> \u03c0
+    
+    Python's regex libraries HIGHLY recommend using raw strings to represent regex instead of normal strings, due to the high prevalence of
+    backslashes in regexes. this has caused a sort of myth with novice Python programmers that raw strings are "regex strings"
 """
 
 
