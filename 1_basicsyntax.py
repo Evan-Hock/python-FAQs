@@ -124,6 +124,18 @@ match list(range(21)):
 # The rest of the elements are 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20.
 
 
+# conditional assignment with 'if' and 'else'
+def twoArityMax(x, y):
+    # `x if x >= y else y` actually evaluates to a value here
+    return x if x >= y else y
+
+# can be chained
+def threeArityMax(x, y, z):
+    return x if x >= y and x >= z else y if y >= x and y >= z else z
+
+print(twoArityMax(3, 4)) # -> 4
+print(threeArityMax(7, 10, 2)) # -> 10
+
 ####################################
 # looping constructs: for and while
 ####################################
