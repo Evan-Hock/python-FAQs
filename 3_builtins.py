@@ -132,6 +132,8 @@ print(*range(11, -1, -2)) # range(start, stop, step=1) returns a sequence beginn
 # to reverse a reversible sequence in place, use the reverse method (xs.reverse())
 # to get a truly new reversed sequence out of another sequence, use the xs[::-1] idiom or a sequence constructor with reversed
 print(*reversed(range(10)))
+# STDOUT:
+# 9 8 7 6 5 4 3 2 1 0
 
 
 ###################################################
