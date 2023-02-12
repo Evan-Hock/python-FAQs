@@ -7,9 +7,9 @@ Python features a few primitive data types:
 * `None`: A singleton to represent the absence of a value
 * `str`: An immutable sequence of characters. Both `"` and `'` may be used, as long as they are consistent. Python makes no distinction between a `chr` and a `str`
 * `list`: A mutable heterogenous list of objects: `[1, 2, 3]`, `[1, True, 'a']`
-* `dict`: A collection of key-value pairs: `{'a': 1, 'b': 2, 'c': 3}`, `{}` (the empty dictionary)
-* `set`: A mutable heterogenous collection of unique objects: `{1, 2, 3}`, `{False, 1, 'a'}`. The empty set can only be created with `set()`.
-* `tuple`: An immutable heterogenous collection: `1, 2, 3`, `4,`. Parentheses may be used, but are optional in certain contexts.
+* `dict`: Key-value pairs: `{'a': 1, 'b': 2}`, `{}`
+* `set`: Unique objects: `{1, 2, 3}`, `{False, 1, 'a'}`. The empty set can only be created with `set()`.
+* `tuple`: Lists, but immutable: `1, 2, 3`, `4,`. Parentheses may be used, but are optional in certain contexts.
 
 ## Next
 [more on strings](2a_strings.md)\
