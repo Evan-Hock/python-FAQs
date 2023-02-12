@@ -40,7 +40,7 @@ equality operators:
 (==) equals, (!=) not equals
 
 identity operator:
-is: x is y will check if x and y refer to the same object in memory. the 'is' operator is the prefered way to check for singletons. [1] is [1] -> False! (because lists are mutable)
+is: x is y will check if x and y refer to the same object in memory. the 'is' operator is the preferred way to check for singletons. [1] is [1] -> False! (because lists are mutable)
 
 bitwise operators:
 (&) and, (|) or, (^) xor, (~) not, (<<) left shift, (>>) arithmetic right shift (value will have 1s shifted in if it was negative)
