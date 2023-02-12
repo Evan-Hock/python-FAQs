@@ -7,6 +7,6 @@ Python features a few primitive data types:
 * `None`: A singleton to represent the absence of a value
 * `str`: A sequence of characters. Both `"` and `'` may be used, as long as they are consistent. Python makes no distinction between a `chr` and a `str`
 
-# Next
-[more on strings](2a_strings.md)
+## Next
+[more on strings](2a_strings.md)\
 [operators](3_operators.md)
