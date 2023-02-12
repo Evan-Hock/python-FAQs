@@ -1,5 +1,4 @@
-Python comments
-
+# Python comments
 ```py
 #!/usr/bin/env python
 # This is a comment
@@ -11,5 +10,5 @@ Multiline comments
 look like this
 """
 ```
-
-Next part: [primitives](2_primitives.md)
+## Next
+[primitives](2_primitives.md)
