@@ -6,7 +6,7 @@ There are special string literals that can be used by prefixing a normal string 
     \t (horizontal tab), \r (carriage return), \x17 (end of transmission block), \u03c0 (π).\
     In raw strings, these escape sequences will be interpreted literally. Notably, however, raw strings cannot end with a backslash,
     because the way raw strings are interpreted Python will think that the closing quote on the string is part of the raw string.\
-    To illustrate the difference between raw strings and normal strings:\
+    To illustrate the difference:\
     `print('\u3c0')` → π\
     `print(r'\u3c0')` → \u3c0
 
