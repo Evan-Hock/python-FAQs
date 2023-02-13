@@ -21,6 +21,7 @@ is equivalent to
 ```py
 def weirdSub(x, y):
     return x - y
+    
 weirdSub = flip(weirdSub)
 ```
 # Next
