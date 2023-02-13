@@ -33,4 +33,4 @@ def threeArityMax(x, y, z):
 ```
 
 # Next
-[loops](8_loopingconstructs.md)
+[loops](6_loopingconstructs.md)
