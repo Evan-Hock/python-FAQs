@@ -10,7 +10,7 @@ else:
 ```
 The above will print `if is to be used for side-effects` to the console.
 
-Python after 3.10 also has `match`
+Python after 3.10 also has `match`:
 ```py
 match list(range(21)):
     case []: # pattern matching!
