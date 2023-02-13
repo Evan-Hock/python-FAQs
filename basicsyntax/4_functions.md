@@ -16,6 +16,6 @@ def make_tuple(x, y):
     """This function returns a tuple containing x and y."""
     return x, y
 ```
-## Next
-[higher order functions](4a_higherorderfunctions.md)
+# Next
+[higher order functions](4a_higherorderfunctions.md)\
 [control structures](5_controlstructures.md)
