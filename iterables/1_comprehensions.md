@@ -23,3 +23,6 @@ They can also use conditions:
 print([x, y for x in range(-1, 2) for y in range(-1, 2) if x != 0 or y != 0])
 ```
 output: `[(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 0), (0, 1), (1, -1), (1, 0), (1, 1)]`
+
+# Next
+[slicing](2_slicing.md)
