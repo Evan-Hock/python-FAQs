@@ -31,3 +31,6 @@ The rest of the elements are 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20.
 def threeArityMax(x, y, z):
     return x if x >= y and x >= z else y if y >= x and y >= z else 
 ```
+
+# Next
+[loops](8_loopingconstructs.md)
