@@ -18,8 +18,8 @@ match list(range(21)):
     case [x, *xs]: # this will match in this case, binding `x` to the first element and the rest to `xs`
         print(f"The first element is {x}.")
         print("The rest of the elements are", *xs, end='.\n')
-    case _: # this is a default catch-all case. like haskell and rust, the convention is to use an _ for an unused binding
-        print("In this instance it does not execute, because unlike C and Javascript cases do not fall through")
+    case _: # this is a default catch-all case
+        print("In this instance it does not execute")
 ```
 The above will print
 ```
