@@ -10,19 +10,12 @@ The flip function above takes a function as its parameter and returns an argumen
 # This code prints "string concatenation" using the above definition of `flip`
 print(flip(lambda x, y: x + y)("concatenation, "string"))
 ```
-Functions that take in a function and do something with it are called **higher-order functions**.\
-Functions that take in a function as their only parameter, do something, and return a function are called decorators.
-They are a subset of higher-order functions, and support the decorator syntax.\
-As a silly example:
+**Higher-order functions** take in a function and do something with it.
+If a higher-order function takes in a function as its only parameter and returns a function, python allows the decorator syntax to be used:
 ```py
-def as_string(f):
-    return lambda *args, **kwargs: str(f(*args, **kwargs))
-  
-@as_string
-def jsAdd(x, y):
-    return x + y
-
-print(len(jsAdd(50, 50))) # 3
+@flip
+def add(x, y):
+    return x - y
 ```
 
 # Next
