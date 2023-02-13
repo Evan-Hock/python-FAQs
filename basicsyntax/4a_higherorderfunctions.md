@@ -24,3 +24,6 @@ def jsAdd(x, y):
 
 print(len(jsAdd(50, 50))) # 3
 ```
+
+# Next
+[control structures](5_controlstructures.md)
