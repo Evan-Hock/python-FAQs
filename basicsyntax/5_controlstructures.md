@@ -14,12 +14,12 @@ Python after 3.10 also has `match`:
 ```py
 match list(range(21)):
     case []: # pattern matching!
-        print("list(range(21)) does not look like [], so no execute")
+        print("Empty")
     case [x, *xs]: # this will match in this case, binding `x` to the first element and the rest to `xs`
         print(f"The first element is {x}.")
         print("The rest of the elements are", *xs, end='.\n')
     case _: # this is a default catch-all case
-        print("In this instance it does not execute")
+        print("Unmatched")
 ```
 The above will print
 ```
