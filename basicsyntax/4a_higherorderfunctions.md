@@ -17,6 +17,11 @@ If a higher-order function takes in a function as its only parameter and returns
 def weirdSub(x, y):
     return x - y
 ```
-
+is equivalent to
+```py
+def weirdSub(x, y):
+    return x - y
+weirdSub = flip(weirdSub)
+```
 # Next
 [control structures](5_controlstructures.md)
