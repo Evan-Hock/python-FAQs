@@ -8,7 +8,7 @@ def flip(f):
 The flip function above takes a function as its parameter and returns an arguments-reversed version
 ```py
 # This code prints "string concatenation" using the above definition of `flip`
-print(flip(lambda x, y: x + y)("concatenation, "string"))
+print(flip(lambda x, y: x + y)("concatenation", "string"))
 ```
 **Higher-order functions** take in a function and do something with it.
 If a higher-order function takes in a function as its only parameter and returns a function, python allows the decorator syntax to be used:
