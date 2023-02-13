@@ -2,9 +2,9 @@
 `if` should be familiar
  ```py
  if False:
-    print("I couldn't think of anything better")
+    print("Will not execute")
 elif False:
-    print("This is pretty dumb")
+    print("Nor this")
 else:
     print("if is to be used for side-effects")
 ```
@@ -14,7 +14,7 @@ Python after 3.10 also has `match`
 ```py
 match list(range(21)):
     case []: # pattern matching!
-        print("This will not execute in this instance, because list(range(21)) does not look like []")
+        print("list(range(21)) does not look like [], so no execute")
     case [x, *xs]: # this will match in this case, binding `x` to the first element and the rest to `xs`
         print(f"The first element is {x}.")
         print("The rest of the elements are", *xs, end='.\n')
