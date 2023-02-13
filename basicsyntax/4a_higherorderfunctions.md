@@ -21,10 +21,6 @@ def as_string(f):
 @as_string
 def jsAdd(x, y):
     return x + y
-  
-@as_string
-def jsSub(x, y):
-    return x - y
 
 print(len(jsAdd(50, 50))) # 3
 ```
