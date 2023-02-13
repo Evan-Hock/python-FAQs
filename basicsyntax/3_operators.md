@@ -29,5 +29,5 @@ There is special syntax with `not`:\
 
 `is` is the preferred way to equality test with `None`.
 
-## Next
+# Next
 [functions](4_functions.md)
