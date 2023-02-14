@@ -31,4 +31,4 @@ print(xs.pop()) # 19
 ```
 
 # Next
-[sequence umpacking](4_unpacking.md)
+[sequence unpacking](4_unpacking.md)
