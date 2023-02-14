@@ -23,5 +23,5 @@ print(my_max(2, 1, 3)) # 3
 ```
 
 # Next
-[more syntax in functions](4a_extrafunctionsyntax.md)
+[more syntax in functions](4a_extrafunctionsyntax.md)\
 [sequence unpacking](5_unpacking.md)
