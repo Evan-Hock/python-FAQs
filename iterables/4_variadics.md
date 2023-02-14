@@ -5,7 +5,7 @@ Inside of the function, all of the variadic arguments will be collected into a t
 def varargs_test(*xs):
     return type(xs)
     
-print(varargs_test(1, 2, 3)) # <¢lass 'tuple'>
+print(varargs_test(1, 2, 3)) # <class 'tuple'>
 ```
 ```py
 def make_tuple(*xs):
