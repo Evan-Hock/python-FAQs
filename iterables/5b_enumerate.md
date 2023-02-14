@@ -1,5 +1,5 @@
 ## Enumerate
-`enumerate(xs)` returns a list of index, value pairs of `xs`.
+`enumerate(xs)` returns a list of `index, value` pairs of `xs`.
 ```py
 for i, x in enumerate(map(lambda x: x ** 2, range(5))):
     print(i, x, sep=': ', end=', ' if i < 4 else '\n')
