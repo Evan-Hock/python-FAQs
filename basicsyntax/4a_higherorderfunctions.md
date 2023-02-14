@@ -25,6 +25,6 @@ def weird_sub(x, y):
 weird_sub = flip(weird_sub)
 ```
 # Next
-[variadic functions](4b_variadics.md)\
-[more function syntax](4c_extrafunctionsyntax.md)\
+[variadics](4b_variadics.md)\
+[more syntax in functions](4c_extrafunctionsyntax.md)\
 [control structures](5_controlstructures.md)
