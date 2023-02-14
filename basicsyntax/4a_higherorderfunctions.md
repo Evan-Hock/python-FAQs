@@ -14,15 +14,15 @@ print(flip(lambda x, y: x + y)("concatenation", "string"))
 If a higher-order function takes in a function as its only parameter and returns a function, python allows the decorator syntax to be used:
 ```py
 @flip
-def weirdSub(x, y):
+def weird_sub(x, y):
     return x - y
 ```
 is equivalent to
 ```py
-def weirdSub(x, y):
+def weird_sub(x, y):
     return x - y
     
-weirdSub = flip(weirdSub)
+weird_sub = flip(weird_sub)
 ```
 # Next
 [control structures](5_controlstructures.md)
