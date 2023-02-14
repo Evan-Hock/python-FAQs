@@ -24,7 +24,4 @@ Example:
 xs = list(range(10))
 print(xs[5:]) # -> [5, 6, 7, 8, 9]
 print(xs[::-1]) # -> [9, 8, 7, 6, 5, 4, 3, 2, 1]
-xs[::2] *= [0] * 2
-print(xs) # -> [0, 1, 0, 3, 0, 5, 0, 7, 0, 9]
-print(list(filter(lambda x: x > 0, xs))) # -> [1, 3, 5, 7, 9]
 ```
