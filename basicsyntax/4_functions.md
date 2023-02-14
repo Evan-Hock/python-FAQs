@@ -18,6 +18,6 @@ def make_tuple(x, y):
 ```
 # Next
 [higher order functions](4a_higherorderfunctions.md)\
-[∨ariadics](4b_variadics.md)\
-[more syntax in functions](4c_moresyntaxinfunctions.md)\
+[variadics](4b_variadics.md)\
+[more syntax in functions](4c_extrafunctionsyntax.md)\
 [control structures](5_controlstructures.md)
