@@ -31,4 +31,4 @@ print(xs.pop()) # 19
 ```
 
 # Next
-[variadic functions](4_variadics.md)
+[sequence umpacking](4_unpacking.md)
