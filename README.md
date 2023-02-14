@@ -8,4 +8,3 @@ To install Python, go through your package manager or get it from [here](https:/
 ## Table of Contents
 1. [basic syntax](basicsyntax)
 2. [iterables](iterables)
-3. [useful builtins](/3_builtins.py)
