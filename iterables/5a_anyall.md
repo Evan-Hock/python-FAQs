@@ -1,5 +1,4 @@
-# Iterable builtins
-## Any and All
+# Any and all
 `any` returns `True` if any of the values in its input iterable are `True`.\
 `all` returns `True` if and only if all of the values in its input iterable are `True`.
 ```py
