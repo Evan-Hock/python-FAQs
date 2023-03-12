@@ -25,7 +25,7 @@
 `[1] is [1]` = `False` because `[1]` is a mutable list.\
 `True is True` = `True` because there is only one `True` object.\
 There is special syntax with `not`:\
-`[1] is not [1]` = `True`\
+`[1] is not [1]` = `True`
 
 `is` is the preferred way to equality test with `None`.
 
