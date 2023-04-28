@@ -1,5 +1,5 @@
 # Max and min
-`max` and `min` are both [variadic](../basicsyntax/4_variadics.md), but they also accept iterables:
+`max` and `min` are both [variadic](../basicsyntax/4b_variadics.md), but they also accept iterables:
 ```py
 print(max([1, 3, 2])) # -> 3
 ```
